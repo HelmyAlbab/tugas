@@ -5,6 +5,7 @@
     <form action="/action_page.php">
       <label for="gsearch">Search Google:</label>
       <input type="search" id="gsearch" name="gsearch">
-      <input type="submit">
+      <input type="submit" value="test">
     </form>
+    
 @endsection
