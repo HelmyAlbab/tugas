@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+body {
+    font-family: Poppins, "sans serif";
+}
+:root {
+    --main-bg-color: #415471;
+    --main-text-color: #fff;
+    --second-text-color: #fff;
+    --second-bg-color: #f1f5f9;
+}
+
+.primary-text {
+    color: var(--main-text-color);
+}
+
+.second-text {
+    color: var(--second-text-color);
+    font-size: 15px;
+}
+
+.primary-bg {
+    background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+    background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+    border-radius: 100%;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -350px;
+    background: #415471;
+    -webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 0.5s ease-out;
+    -o-transition: margin 0.5s ease-out;
+    transition: margin 0.3s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 350px;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#menu-toggle {
+    cursor: pointer;
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px 30px;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -350px;
+    }
+}
+#extend {
+    font-size: 15px;
+}
+.kelas {
+    color: var(--main-bg-color);
+}
+#navbarDropdown {
+    font-size: 15px;
+}
+.tambah {
+    margin-bottom: 4rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.cardss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: none;
+}
+
+.card-title {
+    color: #fff;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.button {
+    width: 100%;
+    border: none;
+    padding: none;
+}
+.ftr {
+    margin-top: 12rem;
+    padding-bottom: 1.65rem;
+    background: #6f7788;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
